@@ -36,4 +36,8 @@ public class HelloController {
         user.setEmail(email);
         return user;
     }
+
+    public String showHello(){
+        return "";
+    }
 }
