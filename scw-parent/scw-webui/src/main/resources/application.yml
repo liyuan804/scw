@@ -1,0 +1,23 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: SCW-WEBUI
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+
+feign:
+  hystrix:
+    enabled: false
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
